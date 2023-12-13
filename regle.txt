@@ -1,0 +1,26 @@
+final Char N = \n;
+
+String regles = "
+        le but du jeu est d'obtenir plus de points que le croupier en ne sachant pas son score" + N +
+        + N +
+        "les differentes couleurs sont celles d'un packet de carte classique, c'est a dire" +N+
+        "   -Pique" + N+
+        "   -trèfle"+N+
+        "   -carreau"+N+
+        "   -coeur"+N+
+        +N+
+        "le packet est composé de cartes de 1 à 10 , de rois et de jockers"+N+
+        "   -les cartes de 1 à 10 valent on la valeur du numéro de leur carte"+N+
+        "   -les rois et les jockers valent 10 points"+N+
+        +N+
+        "votre compteur de point est affiché, mais pas celui du croupier"+N+
+        +N+
+        "Au début de la partie, le joueur et le croupier commencent avec 30 étoiles"+N+
+        "deux cartes sont donné aux participants, puis les participants ont deux choix:"+N+
+        "   -piocher un carte (avec une limite de 4 cartes en main)"+N+
+        "   -montrer ses cartes"+N+
+        "dans le second cas, l'adversaire doit être d'accord peut être d'accord pour montrer aussi les siennes"+ N+
+        +N+
+        "lorsque les deux joueurs montrent leurs cartes, le calculs des étoiles est fait:"+N+
+        "si un joueur à un score strictement supérieur à 21:"+N+
+        "   -";
