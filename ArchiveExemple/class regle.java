@@ -37,7 +37,8 @@ class regle{
         "   -toutes les trois manches"+N+
         "en cas de bonne réponse, le joueur gagne un bonus"+N+
         "   -lors de la première fois où le nombre d'étoiles est inférieur a 0"+N+
-        "en cas de bonne réponse, il continue avec 10 étoiles"; 
+        "en cas de bonne réponse, il continue avec 10 étoiles"+N+
+        "(1) : qqch, (2) : quitter";
 }
 
 void afficherRegle(Regle regle){

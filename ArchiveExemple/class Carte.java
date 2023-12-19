@@ -1,8 +1,11 @@
 class Carte{
     int couleur;
     int valeur;
-    String strCarte;
-    
+    String strCarte;        //to string
+}
+
+String toString(int couleur, int valeur, String[] tabC){
+    return "" + valeur + tabC[couleur];
 }
 
 String randomCarte(int[][]tabVal){
@@ -20,7 +23,7 @@ String randomCarte(int[][]tabVal){
     else(valeur == 10){
         return valRJ();
     }
-    return "" + valeur + tabC[couleur];
+    return toString(valeur, couleur, tabC);
 }
 String ValRJ(){
     if ((int)random() == 0){

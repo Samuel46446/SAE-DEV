@@ -1,6 +1,5 @@
 class Joueur{
-    Carte = c;              // def class carte
-    Carte[] c.main;         
+    Carte[] main;         
     boolean continuer;
     int nbEtoile = 30;
     int lvl;                // juste pour luigi
