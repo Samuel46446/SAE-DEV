@@ -9,5 +9,6 @@ class Tapis{
 }
 
 void initTapis(int[][]tab){
+    /* remplit le tableau */
     tab = tabinit;
 }
