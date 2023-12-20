@@ -33,9 +33,13 @@ class Jeu extends Program{
     void donneLReponses(String[] tab){
         /* affiche les différentes reponses disponibles de la tab */
 
-        
+        String[] temp = mélangeTab(tab);
+
+        for (int i=0; i<length(tab); i++){
+            println (i+1 + ": " + tab[i]);        //gardeRps(...)
+        }
     }
-    void mélangeTab(String [] tab){
+    String[] mélangeTab(String [] tab){
         /* prend une table et la mélange un nombre aléatoire de fois*/
 
         for (int i=0; i<(int)random()*10; i++){
@@ -50,17 +54,26 @@ class Jeu extends Program{
             tab[length(tab)/2] = tab[length(tab)/2 +1];
             tab[length(tab)+1] = eltmid;
         }
+        return tab;
 
     }
-    String getRps(CSVFile file){
+    String[] getRps(CSVFile file, int lig){
+        /* donne un tab de String contenant la liste des réponses possibles */
+        String[] tTemp = new String[4];
+        int cpt = 0;
 
-        return "";
+        for (int i=1; i<length(tTemp)+1; i++){
+            tTemp[cpt] = getCell(file, lig, i);
+            cpt++;
+        }
+        return tTemp;
     }
-    void gardeRps(String rps){
-        /* garde la réponse en enlevant les séparateurs */
+    String gardeRps(String rps){
+        /* garde la réponse en enlevant les séparaeurs */
         while (!(charAt(rps, length(rps)) < 'a') && !(charAt(rps, length(rps)) > 'Z')){
             rps = substring(rps, 0, length(rps)-1);
         }
+        return rps;
     }
 
     String toString(String[] tab){
@@ -73,7 +86,7 @@ class Jeu extends Program{
 
     String donneReponseVrai(int lig, CSVFile file){
         /* return la réponse de la ligne lig dans le fichierLoad*/
-        return getCell(file, lig, 2);
+        return "la bonne réponse est : " + getCell(file, lig, 1);
     }
 
 
@@ -82,7 +95,7 @@ class Jeu extends Program{
     void algorithm(){
         //afficherRegle();
         println(donneQuestion(5, fichierLoad));
-        //donneLReponses(5, fichierLoad);
-        donneReponseVrai(5, fichierLoad);
+        donneLReponses(getRps(fichierLoad, 5));
+        println(donneReponseVrai(5, fichierLoad));
     }
 }

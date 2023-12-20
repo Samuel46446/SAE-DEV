@@ -1,12 +1,12 @@
-question,tabReponses,reponse,,,
-Comment dit-on rouge en anglais ?,"red, brown, black, white",red,,,
-Dans quel pays se situe Londre ?,Angleterre ; France ; Allemagne ; Italie,Angleterre,,,
-Sur quel continent se situe la France?,Europe ; Asie ; Amérique ; Océanie,Europe,,,
-Combien y-a-t'il de lettres dans l'alphabet ?,26;23;21;27,26
-Avec quoi mesure t'on quelqu'un ?,un mètre ; un thermomètre ; une pendule ; une balance,un mètre,,,
-Combien y-a-t'il de jours dans une semaine ?,7;5;8;9,7
-Que boit la vache ?,de l'eau ; du lait ; du vinaigre ; du vin,de l'eau,,,
-Comment s'écrit quatre-vingts en chiffre ?,80;40;420;20202020,80
-Quel mois suit Septembre ?,Octobre ; Novembre ; Juin ; Mars,Octobre,,,
-Qu'est ce que la glace ?,de l'eau solide ; de l'eau liquide ; de l'eau gazeuse ; de l'eau qui sort du frigo,de l'eau solide,,,
-De quel couleur est le drapeau français?,"Bleu, Blanc, Rouge ;Rouge, Blanc, Bleu;Blanc, rouge, Bleu ;Rouge, Bleu, Blanc","Bleu, Blanc, Rouge",,,
+question,ReponsesVrai,Reponse2,Reponse3,Reponse4
+Comment dit-on rouge en anglais ?,red,brown,black,white
+Dans quel pays se situe Londre ?,Angleterre,France ,Allemagne ,Italie
+Sur quel continent se situe la France?,Europe,Asie ,Amérique ,Océanie
+Combien y-a-t'il de lettres dans l'alphabet ?,26,23,21,27
+Avec quoi mesure t'on quelqu'un ?,un mètre,un thermomètre,une pendule ,une balance
+Combien y-a-t'il de jours dans une semaine ?,7,5,8,9
+Que boit la vache ?,de l'eau,du lait,du vinaigre,du vin
+Comment s'écrit quatre-vingts en chiffre ?,80,40,420,20202020
+Quel mois suit Septembre ?,Octobre,Novembre ,Juin ,Mars
+Qu'est ce que la glace ?,de l'eau solide,de l'eau liquide,de l'eau gazeuse,de l'eau qui sort du frigo
+De quel couleur est le drapeau français?,"Bleu, Blanc, Rouge","Rouge, Blanc, Bleu","Blanc, rouge, Bleu","Rouge, Bleu, Blanc"
