@@ -8,3 +8,4 @@ ArchiveExemple/Shots est vide.
 Archive/src sont les fonction disponible.
 Archive/unused sont les fonction non-utilisées mais utiles pour les futures updates/upgrades.
 
+(les dir vides ont des placeholder, mais sont quand même vide pour l'instant)
