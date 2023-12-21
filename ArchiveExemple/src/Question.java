@@ -40,7 +40,7 @@ class Question extends Program{
     }
 
 
-    String[] mélangeTab(String [] tab){
+    String[] mélangeTab(String [] tab){             //changer le é par un e
         /* prend une table et la mélange un nombre aléatoire de fois*/
 
         for (int i=0; i<(int)(random()*10 +1); i++){
