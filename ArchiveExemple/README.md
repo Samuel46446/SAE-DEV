@@ -1,7 +1,7 @@
-<Mettre ici le nom de votre jeu>
+<Luigou Jackou>
 ===========
 
-Développé par <prénom1 nom1> <prénom2 nom2>
+Développé par <Adam Stievenard> <Samuel Turp>
 Contacts : <mail1> , <mail2>
 
 # Présentation de <le nom de votre jeu>
