@@ -4,7 +4,7 @@ import extensions.File;
 class Question extends Program{
 
     //Affichage du contenu d'un fichier texte (ici situé dans le même répertoire)
-	File regle = newFile("regle.txt");
+	File regle = newFile("./ressources/regle.txt");
 
 	//Stockage dans une variable de la ligne suivante dans le fichier
 
@@ -16,7 +16,7 @@ class Question extends Program{
     }
 	
 
-    String fichier = "question.csv";
+    String fichier = "./ressources/question.csv";
 
     //Chargement  en mémoire d'un fichier CSV (ici situé dans le même répertoire) dans une variable de type CSVFile
 	CSVFile fichierLoad = loadCSV(fichier);
