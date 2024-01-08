@@ -35,7 +35,7 @@ class LeSuperJeu extends Program
             println (i+1 + ": " + tab[i]);        //gardeRps(...)
         }
     }
-    String[] melangeTab(String [] tab){
+    String[] melangeTab(String [] tab){ // changer en piocher random puis return la liste des trucs randoms
         /* prend une table et la mélange un nombre aléatoire de fois*/
         int nbFois = (int)(random()*10);
         for (int i=0; i<nbFois; i++){
@@ -128,7 +128,7 @@ class LeSuperJeu extends Program
     void donnerQuestion(Joueur player)
         /* pose une question et donne ou retire 3 étoile en cas de bonne ou de mauvaise réponse */
     {
-        int rnd = (int)(random() * 11 + 1);
+        int rnd = (int)(random() * 11 + 1);  //changer le 11 pour en count ligne du csv pour pouvoir rajouter des lignes
         String bonne = getCell(fichierLoad, rnd, 1);
         println(donneQuestion(rnd, fichierLoad));
         donneLReponses( melangeTab( getRps(fichierLoad, rnd) ) );
@@ -185,7 +185,7 @@ class LeSuperJeu extends Program
         return false;
     }
 
-    void montrerCarte(Joueur cartes_player, Joueur cartes_ia)
+    void montrerCarte(Joueur cartes_player, Joueur cartes_ia) //opti les println(), trop de trucs a factoriser
     {
         int totalJoueur = calculPointJoueur(cartes_player);
         int totalIA = calculPointJoueur(cartes_ia);
@@ -357,7 +357,7 @@ class LeSuperJeu extends Program
     void loopOption()
     {
         boolean b = true;
-        Boolean[] valJoue = new String[]{true, true, false, false};
+        Boolean[] valJoue = new String[]{true, true, false, false};  //ptere le fouttre dans la class Joueur
         boolean continuer = true;
         Joueur cartes_player = new Joueur();
         Joueur cartes_ia = new Joueur();
@@ -376,7 +376,7 @@ class LeSuperJeu extends Program
                 int nb_tour = 1;
                 while(continuer && (nbtour <= 4))
                 {
-                    afficherInfoPartie(Joueur joueur, Joueur ia, int nb_tour, boolean[] valJoue);
+                    afficherInfoPartie(Joueur joueur, Joueur ia, int nb_tour, boolean[] valJoue); //DECASSER CETTE MERDE
 
                     print("Choissisez vous de piocher(a) ou de montrer vos cartes(x) : ");
                     char bouton = readChar();
@@ -386,7 +386,7 @@ class LeSuperJeu extends Program
                         nb_tour += 1;
                         valJoue[nb_tour] = true;
                         donnerQuestion(cartes_player);
-                        afficherInfoPartie(Joueur joueur, Joueur ia, int nb_tour, boolean[] valJoue);
+                        afficherInfoPartie(Joueur joueur, Joueur ia, int nb_tour, boolean[] valJoue); //PAREIL EN CRABE
                         
                         /*
                         while(pioche3)
