@@ -37,8 +37,8 @@ class LeSuperJeu extends Program
     }
     String[] melangeTab(String [] tab){
         /* prend une table et la mélange un nombre aléatoire de fois*/
-
-        for (int i=0; i<(int)random()*10; i++){
+        int nbFois = (int)(random()*10);
+        for (int i=0; i<nbFois; i++){
             String elt1 = tab[0];
 
             for (int indice=0; indice<length(tab)-1; i++){
@@ -93,10 +93,11 @@ class LeSuperJeu extends Program
     }*/
     Card pioche()
     {
-        int randomNumber = (int)(random() * 9);
-        int randomColor = (int)(random() * 3);
         String[] color = { "♠️", "♦️", "♥","🍀" };
         int[] val = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+        int randomNumber = (int)(random() * length(val));
+        int randomColor = (int)(random() * length(color));
+
         
         // si roi ou Joker
         if(val[randomNumber] == 10)
