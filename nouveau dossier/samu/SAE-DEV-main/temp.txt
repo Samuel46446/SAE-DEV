@@ -1,0 +1,67 @@
+/*
+        // si pas de depassement
+        if(totalJoueur > totalIA)
+        {
+            int gain = totalJoueur - totalIA;
+            cartes_player.nbEtoile = cartes_player.nbEtoile + gain;
+            println(totalJoueur + " - " + totalIA + " = +" + gain + "⭐");
+            cartes_ia.nbEtoile = cartes_ia.nbEtoile - gain;
+
+            println("Vous gagnez "+ gain +" étoiles, votre nombre d'étoiles est de " + cartes_player.nbEtoile + " étoiles !");
+            println("Étoiles de Luigi : " + cartes_ia.nbEtoile + "⭐");
+        }
+        else if(totalJoueur == totalIA)
+        {
+            println("!!! EGALITE !!!");
+            println("Vous ne gagnez aucune étoiles, votre nombre d'étoiles est de " + cartes_player.nbEtoile + " étoiles !");
+            println("Étoiles de Luigi : " + cartes_ia.nbEtoile + "⭐");
+        }
+        else if(totalIA > totalJoueur)
+        {
+            int gain = totalIA - totalJoueur;
+            cartes_ia.nbEtoile = cartes_ia.nbEtoile + gain;
+            println(totalIA + " - " + totalJoueur + " = -" + gain + "⭐");
+            cartes_player.nbEtoile = cartes_player.nbEtoile - gain;
+          }
+            println("Étoiles de Luigi : " + cartes_ia.nbEtoile + "⭐");
+        }
+*/ 
+
+
+
+/*
+        // si pas de depassement
+        if(totalJoueur > totalIA)
+        {
+            int gain = totalJoueur - totalIA;
+            cartes_player.nbEtoile = cartes_player.nbEtoile + gain;
+            println(totalJoueur + " - " + totalIA + " = +" + gain + "⭐");
+            cartes_ia.nbEtoile = cartes_ia.nbEtoile - gain;
+
+            println("Vous gagnez "+ gain +" étoiles, votre nombre d'étoiles est de " + cartes_player.nbEtoile + " étoiles !");
+            println("Étoiles de Luigi : " + cartes_ia.nbEtoile + "⭐");
+        }
+        else if(totalJoueur == totalIA)
+        {
+            println("!!! EGALITE !!!");
+            println("Vous ne gagnez aucune étoiles, votre nombre d'étoiles est de " + cartes_player.nbEtoile + " étoiles !");
+            println("Étoiles de Luigi : " + cartes_ia.nbEtoile + "⭐");
+        }
+        else if(totalIA > totalJoueur)
+        {
+            int gain = totalIA - totalJoueur;
+            cartes_ia.nbEtoile = cartes_ia.nbEtoile + gain;
+            println(totalIA + " - " + totalJoueur + " = -" + gain + "⭐");
+            cartes_player.nbEtoile = cartes_player.nbEtoile - gain;
+                                        
+            println("Vous perdez "+ gain +" étoiles, votre nombre d'étoiles est de " + cartes_player.nbEtoile + " étoiles !");
+            println("Étoiles de Luigi : " + cartes_ia.nbEtoile + "⭐");
+        }
+
+        // sinon dépassement
+        else
+        {
+            }
+            println("Étoiles de Luigi : " + cartes_ia.nbEtoile + "⭐");
+        }
+        */
